@@ -1,0 +1,97 @@
+
+The experiments have been carried out with a group of 30 volunteers(Subjects) within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist, which are labaled as following:
+
+ 1. WALKING (label 1)
+ 2. WALKING_UPSTAIRS (label 2)
+ 3. WALKING_DOWNSTAIRS (label 3)
+ 4. SITTING (label 4)
+ 5. STANDING (label 5)
+ 6. LAYING (label 6)
+
+This code book summarizes the resulting data fields in tidy.txt.
+
+1. TimeDomainBodyAcceleration-Mean-X
+2. TimeDomainBodyAcceleration-Mean-Y
+3. TimeDomainBodyAcceleration-Mean-Z
+4. TimeDomainBodyAcceleration-std-X
+5. TimeDomainBodyAcceleration-std-Y
+6. TimeDomainBodyAcceleration-std-Z
+7. TimeDomainGravityAcceleration-Mean-X
+8. TimeDomainGravityAcceleration-Mean-Y
+9. TimeDomainGravityAcceleration-Mean-Z
+10. TimeDomainGravityAcceleration-std-X
+11. TimeDomainGravityAcceleration-std-Y
+12. TimeDomainGravityAcceleration-std-Z
+13. TimeDomainBodyAccelerationJerk-Mean-X
+14. TimeDomainBodyAccelerationJerk-Mean-Y
+15. TimeDomainBodyAccelerationJerk-Mean-Z
+16. TimeDomainBodyAccelerationJerk-std-X
+17. TimeDomainBodyAccelerationJerk-std-Y
+18. TimeDomainBodyAccelerationJerk-std-Z
+19. TimeDomainBodyGyroscope-Mean-X
+20. TimeDomainBodyGyroscope-Mean-Y
+21. TimeDomainBodyGyroscope-Mean-Z
+22. TimeDomainBodyGyroscope-std-X
+23. TimeDomainBodyGyroscope-std-Y
+24. TimeDomainBodyGyroscope-std-Z
+25. TimeDomainBodyGyroscopeJerk-Mean-X
+26. TimeDomainBodyGyroscopeJerk-Mean-Y
+27. TimeDomainBodyGyroscopeJerk-Mean-Z
+28. TimeDomainBodyGyroscopeJerk-std-X
+29. TimeDomainBodyGyroscopeJerk-std-Y
+30. TimeDomainBodyGyroscopeJerk-std-Z
+31. TimeDomainBodyAccelerationMagnitude-Mean
+32. TimeDomainBodyAccelerationMagnitude-std
+33. TimeDomainGravityAccelerationMagnitude-Mean
+34. TimeDomainGravityAccelerationMagnitude-std
+35. TimeDomainBodyAccelerationJerkMagnitude-Mean
+36. TimeDomainBodyAccelerationJerkMagnitude-std
+37. TimeDomainBodyGyroscopeMagnitude-Mean
+38. TimeDomainBodyGyroscopeMagnitude-std
+39. TimeDomainBodyGyroscopeJerkMagnitude-Mean
+40. TimeDomainBodyGyroscopeJerkMagnitude-std
+41. FrequencyBodyAcceleration-Mean-X
+42. FrequencyBodyAcceleration-Mean-Y
+43. FrequencyBodyAcceleration-Mean-Z
+44. FrequencyBodyAcceleration-std-X
+45. FrequencyBodyAcceleration-std-Y
+46. FrequencyBodyAcceleration-std-Z
+47. FrequencyBodyAccelerationJerk-Mean-X
+48. FrequencyBodyAccelerationJerk-Mean-Y
+49. FrequencyBodyAccelerationJerk-Mean-Z
+50. FrequencyBodyAccelerationJerk-std-X
+51. FrequencyBodyAccelerationJerk-std-Y
+52. FrequencyBodyAccelerationJerk-std-Z
+53. FrequencyBodyGyroscope-Mean-X
+54. FrequencyBodyGyroscope-Mean-Y
+55. FrequencyBodyGyroscope-Mean-Z
+56. FrequencyBodyGyroscope-std-X
+57. FrequencyBodyGyroscope-std-Y
+58. FrequencyBodyGyroscope-std-Z
+59. FrequencyBodyAccelerationMagnitude-Mean
+60. FrequencyBodyAccelerationMagnitude-std
+61. FrequencyBodyBodyAccelerationJerkMagnitude-Mean
+62. FrequencyBodyBodyAccelerationJerkMagnitude-std
+63. FrequencyBodyBodyGyroscopeMagnitude-Mean
+64. FrequencyBodyBodyGyroscopeMagnitude-std
+65. FrequencyBodyBodyGyroscopeJerkMagnitude-Mean
+66. FrequencyBodyBodyGyroscopeJerkMagnitude-std
+67. Activity
+68. Subject
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
