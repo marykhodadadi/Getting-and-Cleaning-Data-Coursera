@@ -37,7 +37,7 @@ names(Dataset) <- gsub("Gyro", "Gyroscope", names(Dataset))
 names(Dataset) <- gsub("Mag", "Magnitude", names(Dataset))
 names(Dataset) <- gsub("^t", "TimeDomain", names(Dataset))
 names(Dataset) <- gsub("^f", "Frequency", names(Dataset))
-grep('mean$', names(Dataset), value = TRUE)
+
 table(grepl(".*mean()", names(Dataset)))
 names(Dataset) <- gsub("mean", "Mean", names(Dataset))
 names(Dataset) <- gsub("[()]", "", names(Dataset))
@@ -47,31 +47,12 @@ tail(names(Dataset))
 library(reshape2)
 library(dplyr)
 
-# 5. From the data set in step 4, creates a second, independent tidy data set 
-# with the average of each variable for each activity and each subject.
-
-Dataset2 <- mutate(Dataset, ActivityMean= mean(Activity))
-head(mutate(Dataset, ActivityMean= mean(Activity)))
-
-head(aggregate(formula= .~Activity+Subject, data = Dataset, FUN = mean))
-tail(aggregate(formula= .~Activity+Subject, data = Dataset, FUN = mean))
-
-meltDataset <- melt(Dataset, id.vars = names(Dataset)[1:66],
-                    measure.vars = c("Activity","Subject"))
-head(meltDataset)
-tail(meltDataset)
-dim(meltDataset)
-
-Dataset2 <- data.table::dcast(meltDataset, Activity+Subject~variable, fun.aggregate = mean)
-head(Dataset2)
-tail(Dataset2)
-data.table::dcast()
 
 Dataset2 <- data.table::melt(Dataset, id=c("Activity","Subject"))
 head(Dataset2)
 tail(Dataset2)
 Dataset2 <- data.table::dcast(Dataset2, Activity+Subject~variable, fun.aggregate = mean)
-write.table(Dataset2, file = "tidydata.txt")
+write.table(Dataset2, file = "tidydata.txt", row.names = FALSE)
 
 
 
